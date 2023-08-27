@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
@@ -12,9 +12,21 @@
     <header>
         <h2 class="text-6xl">Hunting Phone</h2>
     </header>
-    <main>
-
-    </main>
+    <main class="container mx-auto mt-8">
+            <section class="bg-gray-100 p-4 m-4">
+                <input id="search-field" type="text" placeholder="Search" class="input w-full max-w-xs" />
+                <button onclick='handleSearch()'class="btn btn-accent">Search</button>
+                <!-- another search filed -->
+                <input type="text" id="search-field2"  placeholder="Search here" class="input w-full max-w-xs" />
+                <button onclick="handleSearch2()" class="btn btn-primary">search</button>
+            </section>
+            <div id="phone-container"class="grid grid-cols-1 md:grid-cols-2 lg: grid-cols-3 gap-4">
+            </div>
+            <!-- show all button -->
+            <div id="show-all-container" class="hidden">
+                <button onclick="handleSearch2()" class="btn btn-primary">Show all</button>
+            </div>
+        </main>
     <footer>
 
     </footer>
