@@ -17,21 +17,20 @@
                 <input id="search-field" type="text" placeholder="Search" class="input w-full max-w-xs" />
                 <button onclick='handleSearch()'class="btn btn-accent">Search</button>
                 <!-- another search filed -->
-                <input type="text" id="search-field2"  placeholder="Search here" class="input w-full max-w-xs" />
-                <button onclick="handleSearch2()" class="btn btn-primary">search</button>
+                <!-- <input type="text" id="search-field2"  placeholder="Search here" class="input w-full max-w-xs" />
+                <button onclick="handleSearch2()" class="btn btn-primary">search</button> -->
             </section>
-            <!-- spinner -->
-
             <!-- search result -->
             <section>
+                 <!-- spinner -->
                 <div id="loading-spinner" class="text-center my-40 hidden">
                    <span class="loading loading-spinner text-primary loading-lg"></span> 
                 </div>
                 <div id="phone-container"class="grid grid-cols-1 md:grid-cols-2 lg: grid-cols-3 gap-4">
                 </div>
                 <!-- show all button -->
-                <div id="show-all-container" class="hidden">
-                    <button onclick="handleSearch2()" class="btn btn-primary">Show all</button>
+                <div id="show-all-container" class="hidden text-center my-8">
+                    <button onclick="handleShowAll()" class="btn btn-primary">Show all</button>
                 </div>
             </section>
             
